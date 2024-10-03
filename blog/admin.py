@@ -10,13 +10,13 @@ class TagAdmin(admin.ModelAdmin):
     model = Tag
 
 @admin.register(Post)
-class PostAdmin(admin.Model.Admin):
+class PostAdmin(admin.ModelAdmin):
     model = Post
 
     list_display = (
         "id",
         "title",
-        "subitle",
+        "subtitle",
         "slug",
         "publish_date",
         "published",
@@ -40,10 +40,10 @@ class PostAdmin(admin.Model.Admin):
         "published",
     )
     prepopulated_fields = {
-        "slug": {
+        "slug": (
             "title",
             "subtitle",
-        }
+        )
     }
     date_hierachy = "publish_date"
     save_on_top = True
