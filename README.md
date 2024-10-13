@@ -1,5 +1,6 @@
 ![Django App Tests](https://github.com/geektechdude/blog-django-backend/actions/workflows/djangoTests.yml/badge.svg)
 ![Docker Deployment](https://github.com/geektechdude/blog-django-backend/actions/workflows/dockerDeploy.yml/badge.svg)
+![Test Coverage](https://github.com/geektechdude/blog-django-backend/actions/workflows/test_coverage.yml/badge.svg)
 
 # Introduction
 Building a Django backend for a blog that presents GraphQL connectivity. Original code created whilst learning from https://realpython.com/python-django-blog/ , and then built upon.
