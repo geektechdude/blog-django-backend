@@ -11,8 +11,6 @@ class ProfileTestCase(TestCase):
         Profile.objects.create(user=User.objects.get(username="testUser"),
                               website="testWebsite", 
                               bio="testBio")
-        
-
 
     def test_auth_username(self):
         testUser = User.objects.get(username="testUser")
